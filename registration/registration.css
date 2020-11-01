@@ -1,0 +1,102 @@
+body{
+    background: linear-gradient(to left bottom, violet, slateblue);
+}
+
+.main-section{
+    margin-top: 6rem;
+    width: 100%;
+    height:800px;
+}
+
+.main-form{
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
+.form_lists{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form h1{
+    font-family: "Anton", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.form_lists label{
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form_lists input:not([type="checkbox"]), select{
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #ccc;
+}
+
+button{
+    background-color: #57b846 !important;
+    font-weight: bold;
+    font-size: 1.5rem !important;
+    font-family: "Anton", sans-serif;
+}
+
+button:hover{
+    background: #343a40 !important;
+    color: white !important;
+}
+
+
+
+@media (max-width: 1090px)
+{   
+        
+    .main-section{
+        margin-top: 5rem;
+    }
+    .main-form{
+        width: 60%;
+    }
+}
+
+@media (max-width: 728px){
+
+    .main-section{
+        margin-top: 5rem;
+    }
+    .main-form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px){
+
+    .main-section{
+        margin-top: 5rem;
+        height: 600px;
+    }
+    .main-form{
+        width: 100%;
+        border-radius: 0;
+    }
+
+        
+    .form_lists{
+        width: 90%;
+    }
+}

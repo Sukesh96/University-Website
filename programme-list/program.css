@@ -1,0 +1,23 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+main{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    height: auto;
+}
+
+.main-header{
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.table_body tr > td{
+    padding: 1rem;
+    text-align: justify;
+    height: 200px;
+}
+

@@ -1,0 +1,122 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(to left bottom, lightblue, white);
+}
+
+.section_container{
+    margin-top: 4rem;
+    height: fit-content;
+}
+
+.section_image_container{
+    width: 100%;
+    height: 500px;   
+    background-image: url(../important-dates/plans-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+}
+
+.section_title_lists{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -10%;
+}
+
+.section_title_lists .section_title{
+    margin: 1rem 2rem;
+    padding: 1rem 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border-bottom:5px solid tomato;
+}
+
+.section_info{
+    text-align: justify;
+}
+
+
+
+#list_1 button{
+    margin: 0.5rem 3rem;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: orangered !important;
+}
+
+#list_1 ul{
+    margin: 0;
+    padding: 1rem 2rem;
+    list-style-type: none;
+}
+
+#list_1 ul > li{
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+#list_2{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.list_block_1{
+    width: 70%;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.list_block_2{
+    width: 30%;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+#list_2 ul{
+    list-style-type: none;
+    margin: 0.5rem 1rem;
+    padding: 1rem 2rem;
+}
+
+#list_2 ol > li{
+    margin: 1rem;
+}
+
+.section_info li > ol{
+    padding-left: 0.5rem;
+}
+
+
+@media (max-width: 980px){
+    .section_image_container{
+        height: 400px;
+    }   
+}
+
+
+@media (max-width: 848px){
+
+    .section_image_container{
+        background-position: left 30% top 10%;
+        width: 100%;
+    }
+
+    .section_title_lists{
+        width: 100%;
+        border-radius: 0;
+    }
+    #list_2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .list_block_1, .list_block_2{
+        width: 100%;
+        border-radius: 0;
+    }
+}
