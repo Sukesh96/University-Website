@@ -12,3 +12,11 @@ backdrop.addEventListener("click",function(){
     mobileNav.style.display = "none";
     backdrop.style.display = "none";
 });
+
+
+//Pre Loader
+let preLoader = document.querySelector(".preloader");
+
+function myLoader(){
+    preLoader.style.display ="none";
+}
