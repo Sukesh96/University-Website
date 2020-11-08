@@ -13,6 +13,19 @@ body {
   overflow: hidden;
 }
 
+.preloader {
+  background: #fff !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
