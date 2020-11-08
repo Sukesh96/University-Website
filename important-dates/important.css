@@ -11,7 +11,7 @@ body{
 .section_image_container{
     width: 100%;
     height: 500px;   
-    background-image: url(../important-dates/plans-background.jpg);
+    background-image: url(../important-dates/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
