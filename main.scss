@@ -10,6 +10,7 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
+    background-color: rgba(0,0,0,0.1);
 }
 .preloader{
     background: #fff !important;
@@ -107,6 +108,7 @@ body{
     width: 100%;
     padding: 0.2rem;
     overflow: hidden;
+    box-shadow: 2px 2px 5px #000;
     .navbar-logo{
         margin:0;
         padding: 0.5rem;
@@ -141,8 +143,35 @@ main{
         height: 32rem;
         background-image: url("./university.jpg");
         background-position: bottom 30% center;
+        position: relative;
+
+        h1{
+            position:absolute;
+            top: 200px;
+            left: 10%;
+            margin:0;
+            padding:0;
+            @media (max-width: 578px){
+                top: 20%;
+                left: 5%;
+                text-align: center;
+            }
+            .txt-type{
+                .txt{
+                    color: #fff;
+                    background-color: rgba(0,0,0,0.2);
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: bold;
+                    font-size: 3rem;
+                    text-shadow: 5px 5px #000;
+                    border-right: 5px solid #000;
+                }
+            }
+        }
+        
     }
 }
+
 
 .first_article{
     width: 100%;
@@ -158,13 +187,25 @@ main{
         align-items: center;
         position: relative;
         top: -40%;
+        animation: animateRight;
+        animation-duration:2s;
+        animation-fill-mode: forwards;
+
+        @keyframes animateRight{
+            from{
+                left:-100px;
+            }
+            to{
+                left:0;
+            }
+        }
 
         .first_article-item{
             width: 25%;
             height: 250px;
             padding: 1rem;
             text-align: center;
-            box-shadow: 0px 0px 10px #000;
+            // box-shadow: 0px 0px 10px #000;
             transition: 1s;
             cursor: pointer;
             transition-property: transform;
@@ -180,7 +221,7 @@ main{
             
         .first_article-item:hover{
             transform: translateY(-2rem);
-            box-shadow: 0px 0px 10px #000;
+            // box-shadow: 0px 0px 10px #000;
         }
     }
 }
@@ -192,7 +233,12 @@ main{
     height: 250px;
     text-align: center;
     box-shadow: 0 0 5px #ccc;
+    
+    &:hover{
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    }
 }
+
 
 .second_article_heading{
     padding-top: 2rem;
@@ -210,6 +256,10 @@ main{
     margin-top: 2rem;
     padding: 2rem;
     box-shadow: 0 0 5px #ccc;
+
+    &:hover{
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+    }
 }
 
 .third_article_heading{
@@ -346,7 +396,7 @@ main{
 
 #footer_list_1{
     text-align: center;
-    border-right: 2px dotted #ccc;
+    border-right: 2px solid #ccc;
 }
 
 #footer_list_1 ul{

@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="./animation.css">
 </head>
 
-<body>
+<body onload="myLoader()">
 
+    <!-- Pre-Loader -->
     <div class="preloader">
         <span class="spinner-border text-dark"></span>
     </div>
 
+    <!-- Backdrop -->
     <div class="backdrop"></div>
 
     <!--Header Start-->
@@ -136,7 +138,15 @@
     <!--Main Section Start-->
     <main>          
         <section class="main_section">
-            <div class="main-image_container"></div>
+            <div class="main-image_container">
+                <h1>
+                    <span class="txt-type" data-wait="2000" 
+                    data-words='["Welcome To New Way Of Learning Technologies",
+                    "Today is your opportunity to build the tomorrow",
+                    "Follow Your Dreams"]'>
+                    </span>
+                </h1>
+            </div>
         </section>
        
         <article class="first_article">
@@ -167,7 +177,9 @@
 
 
         <article class="second_article bg-light">
-            <h3 class="text-dark second_article_heading"><span class="text-danger"><strong>Important</strong></span> Accouncements</h3>
+            <h3 class="text-dark second_article_heading">
+                <span class="text-danger"><strong>Important</strong></span> Accouncements
+            </h3>
             <div class="row">
                 <div class="col-sm-12 second_article_lists">
                     <h3> UG Admissions (2021-2022) for BCA, BBA, B.Sc, B.Tech</h3>
@@ -296,6 +308,11 @@
                 <li><i class="fas fa-phone-alt"></i> 011-2659-7156</li>
                 <li><i class="fas fa-envelope"></i> info@uon.ac.in</li>
                 <li><i class="fas fa-globe-europe"></i> www.uoc.ac.in</li>
+            </ul>
+            <ul>
+                <li><i class="fab fa-facebook" style="font-size: 30px;"></i></li>
+                <li><i class="fab fa-twitter" style="font-size: 30px;"></i></li>
+                <li><i class="fab fa-linkedin" style="font-size: 30px;"></i></li>
             </ul>
         </div>
 

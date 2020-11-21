@@ -1,11 +1,11 @@
-body{
-    background: linear-gradient(to left bottom, violet, slateblue);
-}
-
 .main-section{
-    margin-top: 6rem;
     width: 100%;
     height:800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 10%, transparent),url("./home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left 10% bottom 10%;
+    position: relative;
 }
 
 .main-form{
@@ -16,11 +16,12 @@ body{
     align-items: center;
     justify-content: center;
     background: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
     padding: 3rem 2rem;
     border-radius: 10px;
+    position:absolute;
+    left: 32%;
+    top: 100px;
+    box-shadow: 1px 1px 10px #000;
 }
 
 .form_lists{
@@ -65,37 +66,25 @@ button:hover{
 
 @media (max-width: 1090px)
 {   
-        
-    .main-section{
-        margin-top: 5rem;
-    }
     .main-form{
+        left: 20%;
         width: 60%;
     }
 }
-
 @media (max-width: 728px){
 
-    .main-section{
-        margin-top: 5rem;
-    }
     .main-form{
+        left: 5%;
         width: 90%;
     }
 }
-
 @media (max-width: 540px){
 
-    .main-section{
-        margin-top: 5rem;
-        height: 600px;
-    }
     .main-form{
+        left: 0;
         width: 100%;
         border-radius: 0;
     }
-
-        
     .form_lists{
         width: 90%;
     }
